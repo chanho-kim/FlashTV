@@ -55,6 +55,14 @@ public class BoardPanel extends JPanel{
 //			e1.printStackTrace();
 //		}
 		
+		try {
+			image = ImageIO.read(ResourceLoader.load("newfile.png"));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		
 		newBoard = new JButton();
 		newBoard.setIcon(new ImageIcon(image));
 		newBoard.setBounds(0, 0, 40, 40);
@@ -62,7 +70,7 @@ public class BoardPanel extends JPanel{
 		add(newBoard);
 		
 		try {
-			image = ImageIO.read(ResourceLoader.load("load.png"));
+			image = ImageIO.read(ResourceLoader.load("open file.png"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -103,20 +111,7 @@ public class BoardPanel extends JPanel{
 		add(saveAs);
 		
 		try {
-			image = ImageIO.read(ResourceLoader.load("button-test.png"));
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		
-		newButton = new JButton();
-		newButton.setIcon(new ImageIcon(image));
-		newButton.setBounds(200, 0, 40, 40);
-		newButton.setToolTipText("Inserts a new button");
-		add(newButton);
-		
-		try {
-			image = ImageIO.read(ResourceLoader.load("label-test.png"));
+			image = ImageIO.read(ResourceLoader.load("label.png"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -124,12 +119,34 @@ public class BoardPanel extends JPanel{
 		
 		newLabel = new JButton();
 		newLabel.setIcon(new ImageIcon(image));
-		newLabel.setBounds(240, 0, 40, 40);
+		newLabel.setBounds(200, 0, 40, 40);
 		newLabel.setToolTipText("Inserts a new label");
 		add(newLabel);
+				
+		
+		try {
+			image = ImageIO.read(ResourceLoader.load("new button.png"));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		newButton = new JButton();
+		newButton.setIcon(new ImageIcon(image));
+		newButton.setBounds(240, 0, 40, 40);
+		newButton.setToolTipText("Inserts a new button");
+		add(newButton);
+		
+
+		try {
+			image = ImageIO.read(ResourceLoader.load("new textbox.png"));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}		
 		
 		newTextBox = new JButton();
-		newTextBox.setIcon(new ImageIcon(""));
+		newTextBox.setIcon(new ImageIcon(image));
 		newTextBox.setBounds(280, 0, 40, 40);
 		newTextBox.setToolTipText("Inserts a new textbox");
 		add(newTextBox);
@@ -148,7 +165,7 @@ public class BoardPanel extends JPanel{
 		add(newClock);
 		
 		try {
-			image = ImageIO.read(ResourceLoader.load("alert.png"));
+			image = ImageIO.read(ResourceLoader.load("alertbutton.png"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -161,17 +178,7 @@ public class BoardPanel extends JPanel{
 		add(newAlert);
 		
 		try {
-			image = ImageIO.read(ResourceLoader.load("alert2.png"));
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		
-		newAlert.setRolloverIcon(new ImageIcon(image));
-		
-		
-		try {
-			image = ImageIO.read(ResourceLoader.load("options.png"));
+			image = ImageIO.read(ResourceLoader.load("options settings.png"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
